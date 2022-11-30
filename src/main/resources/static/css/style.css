@@ -1,0 +1,20 @@
+div {
+    padding: 3px 3px;
+}
+
+.btn-margin {
+    padding: 3px 15px;
+}
+
+.nav-pills {
+    align-content: center;
+    width: 100%;
+}
+
+.nav-link{
+    width: 80%;
+}
+.headerHeight{
+    height: 50px;
+}
+

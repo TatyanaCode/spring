@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Трекер голодания</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" charset="utf-8">
+    <link href="../css/style.css" rel="stylesheet" charset="utf-8">
+</head>
+<body>
+<header th:insert = "fragments/header.html :: header2" class="header" > Заголовок </header>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="row">
+                <div th:replace = "fragments/login.html :: login" class="login"> Логин </div>
+            </div>
+            <div class="row">
+                <div th:replace = "fragments/menu.html :: menu" class="menu"> Меню </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="card border-primary">
+                <div class="card-body">
+                    <div th:replace="${view} :: content">Контент страницы</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:replace = "fragments/footer.html :: footer"> Подвал </footer>
+</body>
+</html>
